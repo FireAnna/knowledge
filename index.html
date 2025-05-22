@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Редагована База Знань</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📘 База знань</h1>
+
+  <section>
+    <h3>🔎 Пошук</h3>
+    <input type="text" id="searchInput" placeholder="Введіть термін" />
+    <button onclick="search()">Знайти</button>
+    <div id="result"></div>
+  </section>
+
+  <section>
+    <h3>➕ Додати або змінити запис</h3>
+    <input type="text" id="keyInput" placeholder="Ключ (наприклад, html)" />
+    <input type="text" id="valueInput" placeholder="Значення (пояснення)" />
+    <button onclick="saveEntry()">Зберегти</button>
+  </section>
+
+  <section>
+    <h3>🗂 Усі записи</h3>
+    <ul id="allEntries"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
